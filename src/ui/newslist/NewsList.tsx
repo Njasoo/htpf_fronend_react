@@ -46,7 +46,7 @@ export default function NewsList() {
   }, [pageNumber]); //页码变的时候就不要重置页码了
 
   return (
-    <div className="w-[95%] mx-auto">
+    <div className="w-[95%] mx-auto container">
       {newsList.map((news, index) => (
         <NewsItem
           key={news.id}
