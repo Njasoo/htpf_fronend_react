@@ -18,7 +18,7 @@ export default function Page() {
   }, [currentPlatform_en]);
 
   return (
-    <div className="w-[95%] mx-auto container flex justify-center items-center border mt-2 p-4">
+    <div className="w-[95%] mx-auto flex justify-center items-center border mt-2 p-4">
       <img src={url} alt="" width="600px" />
     </div>
   );
