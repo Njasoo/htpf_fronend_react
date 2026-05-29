@@ -25,7 +25,7 @@ export default function NewsList() {
     }
     params.append("page", pageNumber.toString());
     console.log(
-      `${process.env.NEXT_PUBLIC_API_BASE}/hot/?${params.toString()}`
+      `${process.env.NEXT_PUBLIC_API_BASE}/hot/?${params.toString()}`,
     );
     fetch(`${process.env.NEXT_PUBLIC_API_BASE}/hot/?${params.toString()}`)
       .then((res: any) => res.json())
@@ -46,7 +46,7 @@ export default function NewsList() {
   }, [pageNumber]); //页码变的时候就不要重置页码了
 
   return (
-    <div className="w-[95%] mx-auto container">
+    <div className="w-[95%] mx-auto">
       {newsList.map((news, index) => (
         <NewsItem
           key={news.id}

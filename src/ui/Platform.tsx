@@ -12,14 +12,14 @@ function PlatformSearcher() {
     if (currentPlatform_en == "tieba") {
       window.open(
         `https://tieba.baidu.com/f?ie=utf-8&kw=${searchText}&fr=search`,
-        "_blank"
+        "_blank",
       );
     } else if (currentPlatform_en == "weibo") {
       window.open(`https://s.weibo.com/weibo?q=${searchText}`, "_blank");
     } else if (currentPlatform_en == "bilibili") {
       window.open(
         `https://search.bilibili.com/all?keyword=${searchText}`,
-        "_blank"
+        "_blank",
       );
     }
   };
